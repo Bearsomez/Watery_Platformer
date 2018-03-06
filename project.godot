@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="Watery Platformer"
-run/main_scene="res://characters/player.tscn"
+run/main_scene="res://levels/lvtest.tscn"
 config/icon="res://icon.png"
 
 [rendering]

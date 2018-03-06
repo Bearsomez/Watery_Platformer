@@ -1,7 +1,9 @@
 extends KinematicBody2D
+
 var motion = Vector2()
 export var player_speed_x = 100
-export var player_speed_y = 0
+export var player_speed_y = -400
+const UP = Vector2(0, -1)
 
 #basic left/right movement
 
@@ -15,6 +17,11 @@ func _process(delta):
 	else:
 		motion.x = 0
 	
+	if is_on_floor():
+		if Input.is_action_just_pressed("ui_up"):
+			motion.y = player_speed_y
+	
 	#always affect character with values
-	move_and_slide(motion)
+	motion = move_and_slide(motion, UP)
+	print(motion)
 	pass

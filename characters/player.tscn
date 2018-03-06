@@ -17,26 +17,25 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
-radius = 41.9522
-height = 16.2869
+extents = Vector2( 34.1326, 40.8208 )
 
 [node name="player" type="KinematicBody2D" index="0"]
 
-position = Vector2( 32.1279, 31.9333 )
+position = Vector2( 0, 3.76308 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Transform", "Visibility" ]
 __meta__ = {
 "_edit_group_": true
 }
 player_speed_x = 100
-player_speed_y = 0
+player_speed_y = -400
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="." index="0"]
 
@@ -47,7 +46,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
-position = Vector2( 1.08072, 3.78252 )
+position = Vector2( 1.53709, 8.34358 )
 shape = SubResource( 2 )
 
 
