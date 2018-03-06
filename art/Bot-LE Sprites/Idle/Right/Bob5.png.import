@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Bob5.png-8a88481b362807c1c6b3bf7b4daac263.stex"
+
+[deps]
+
+source_file="res://art/Bot-LE Sprites/Idle/Right/Bob5.png"
+source_md5="0c58c920795c565ae5043633a33f9547"
+
+dest_files=[ "res://.import/Bob5.png-8a88481b362807c1c6b3bf7b4daac263.stex" ]
+dest_md5="8c6681f234950a1ace36d93b45708935"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

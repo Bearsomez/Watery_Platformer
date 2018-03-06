@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/L-rock2.png-60abf032f006d20d161ee93656f250ca.stex"
+
+[deps]
+
+source_file="res://art/Bot-LE Sprites/Walk/Left/L-rock2.png"
+source_md5="1c08324ea4519b2debba00a8478a7a4d"
+
+dest_files=[ "res://.import/L-rock2.png-60abf032f006d20d161ee93656f250ca.stex" ]
+dest_md5="aff53a4102f1958dedd331c31d518423"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

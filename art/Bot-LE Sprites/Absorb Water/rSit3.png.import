@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/rSit3.png-04220d806b50db9ad1397a09e3219792.stex"
+
+[deps]
+
+source_file="res://art/Bot-LE Sprites/Absorb Water/rSit3.png"
+source_md5="af14a9e68d91849a41ff9982416323a7"
+
+dest_files=[ "res://.import/rSit3.png-04220d806b50db9ad1397a09e3219792.stex" ]
+dest_md5="34f0c829f037620eb9c061c151586da2"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://art/Bot-LE Sprites/Idle/Right/Bob1.png" type="Texture" id=1]
+[ext_resource path="res://art/Bot-LE Sprites/Idle/Right/Bob2.png" type="Texture" id=2]
+[ext_resource path="res://art/Bot-LE Sprites/Idle/Right/Bob3.png" type="Texture" id=3]
+[ext_resource path="res://art/Bot-LE Sprites/Idle/Right/Bob4.png" type="Texture" id=4]
+[ext_resource path="res://art/Bot-LE Sprites/Idle/Right/Bob5.png" type="Texture" id=5]
+[ext_resource path="res://art/Bot-LE Sprites/Idle/Right/Bob6.png" type="Texture" id=6]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+} ]
+
+[node name="player" type="KinematicBody2D" index="0"]
+
+position = Vector2( 166.907, 157.634 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="0"]
+
+scale = Vector2( 0.32, 0.32 )
+frames = SubResource( 1 )
+animation = "idle"
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+

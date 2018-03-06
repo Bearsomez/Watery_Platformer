@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/spin3.png-b543aebe81952e185ed8307616b22015.stex"
+
+[deps]
+
+source_file="res://art/Bot-LE Sprites/Spin (Jump)/spin3.png"
+source_md5="c118f6ae97e3a496326a74051d662d14"
+
+dest_files=[ "res://.import/spin3.png-b543aebe81952e185ed8307616b22015.stex" ]
+dest_md5="c00d0c59746d6b508fb5092b48eaf113"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
