@@ -34,8 +34,9 @@ _sections_unfolded = [ "Transform", "Visibility" ]
 __meta__ = {
 "_edit_group_": true
 }
-player_speed_x = 100
-player_speed_y = -400
+running_speed = 200
+jumping_speed = -400
+gravity = 20
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="." index="0"]
 
