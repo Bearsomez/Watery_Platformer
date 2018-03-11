@@ -4,6 +4,7 @@ export var max_running_speed = 0
 export var jumping_speed = 0
 export var gravity = 0
 export var acceleration = 0
+var friction_enabled = false
 export(float, -1, 1) var friction = 0
 #basic movement definitions
 var motion = Vector2()
@@ -11,6 +12,7 @@ const UP = Vector2(0, -1)
 
 func _process(delta):
 	motion.y += gravity
+	friction_enabled = false
 	
 	if Input.is_action_pressed("ui_right"):
 		#movement
@@ -27,11 +29,13 @@ func _process(delta):
 		$Sprite.play("walk")
 	else:
 		$Sprite.play("idle")
-		motion.x = lerp(motion.x, 0, friction)
+		friction_enabled = true
 	
 	if is_on_floor():
 		if Input.is_action_just_pressed("ui_up"):
 			motion.y = -jumping_speed
+		if friction_enabled == true:
+			motion.x = lerp(motion.x, 0, friction)
 	else:
 		$Sprite.play("jump")
 	
