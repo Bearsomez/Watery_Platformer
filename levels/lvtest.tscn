@@ -32,9 +32,9 @@ _sections_unfolded = [ "Cell" ]
 
 position = Vector2( 288, 96 )
 max_running_speed = 400
-jumping_speed = 530
-gravity = 30
+jumping_speed = 600
+gravity = 50
 acceleration = 50
-friction = 0.25
+friction = 0.5
 
 
