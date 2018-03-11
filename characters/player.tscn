@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://characters/player.gd" type="Script" id=1]
 [ext_resource path="res://art/Bot-LE Sprites/Idle/Right/Bob1.png" type="Texture" id=2]
@@ -7,6 +7,17 @@
 [ext_resource path="res://art/Bot-LE Sprites/Idle/Right/Bob4.png" type="Texture" id=5]
 [ext_resource path="res://art/Bot-LE Sprites/Idle/Right/Bob5.png" type="Texture" id=6]
 [ext_resource path="res://art/Bot-LE Sprites/Idle/Right/Bob6.png" type="Texture" id=7]
+[ext_resource path="res://art/Bot-LE Sprites/Walk/Right/rock1.png" type="Texture" id=8]
+[ext_resource path="res://art/Bot-LE Sprites/Walk/Right/rock2.png" type="Texture" id=9]
+[ext_resource path="res://art/Bot-LE Sprites/Walk/Right/rock3.png" type="Texture" id=10]
+[ext_resource path="res://art/Bot-LE Sprites/Spin (Jump)/spin9.png" type="Texture" id=11]
+[ext_resource path="res://art/Bot-LE Sprites/Spin (Jump)/spin1.png" type="Texture" id=12]
+[ext_resource path="res://art/Bot-LE Sprites/Spin (Jump)/spin2.png" type="Texture" id=13]
+[ext_resource path="res://art/Bot-LE Sprites/Spin (Jump)/spin3.png" type="Texture" id=14]
+[ext_resource path="res://art/Bot-LE Sprites/Spin (Jump)/spin4.png" type="Texture" id=15]
+[ext_resource path="res://art/Bot-LE Sprites/Spin (Jump)/spin5.png" type="Texture" id=16]
+[ext_resource path="res://art/Bot-LE Sprites/Spin (Jump)/spin6.png" type="Texture" id=17]
+[ext_resource path="res://art/Bot-LE Sprites/Spin (Jump)/spin8.png" type="Texture" id=18]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -14,15 +25,30 @@ animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": true,
 "name": "idle",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "test",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "walk",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "jump",
+"speed": 10.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
-extents = Vector2( 34.1326, 40.8208 )
+extents = Vector2( 34.1326, 41.3694 )
 
-[node name="player" type="KinematicBody2D" index="0"]
+[node name="player" type="KinematicBody2D"]
 
 position = Vector2( 0, 3.76308 )
 input_pickable = false
@@ -38,7 +64,7 @@ running_speed = 200
 jumping_speed = -400
 gravity = 20
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="0"]
+[node name="Sprite" type="AnimatedSprite" parent="." index="0"]
 
 scale = Vector2( 0.32, 0.32 )
 frames = SubResource( 1 )
@@ -47,6 +73,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
+visible = false
 position = Vector2( 1.53709, 8.34358 )
 shape = SubResource( 2 )
 
