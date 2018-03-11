@@ -37,7 +37,11 @@ func _process(delta):
 		if friction_enabled == true:
 			motion.x = lerp(motion.x, 0, friction)
 	else:
-		$Sprite.play("jump")
+		if motion.y < 0:
+			$Sprite.play("jump")
+		else:
+			$Sprite.play("fall")
+		lerp(motion.x, 0, friction/4)
 	
 	#always affect character with values
 	motion = move_and_slide(motion, UP)
