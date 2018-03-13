@@ -7,11 +7,11 @@
 [ext_resource path="res://art/Bot-LE Sprites/Idle/Right/Bob4.png" type="Texture" id=5]
 [ext_resource path="res://art/Bot-LE Sprites/Idle/Right/Bob5.png" type="Texture" id=6]
 [ext_resource path="res://art/Bot-LE Sprites/Idle/Right/Bob6.png" type="Texture" id=7]
-[ext_resource path="res://art/Bot-LE Sprites/Spin (Jump)/spin9.png" type="Texture" id=8]
+[ext_resource path="res://art/Bot-LE Sprites/Spin (Jump)/spin1.png" type="Texture" id=8]
 [ext_resource path="res://art/Bot-LE Sprites/Walk/Right/rock1.png" type="Texture" id=9]
 [ext_resource path="res://art/Bot-LE Sprites/Walk/Right/rock2.png" type="Texture" id=10]
 [ext_resource path="res://art/Bot-LE Sprites/Walk/Right/rock3.png" type="Texture" id=11]
-[ext_resource path="res://art/Bot-LE Sprites/Spin (Jump)/spin1.png" type="Texture" id=12]
+[ext_resource path="res://art/Bot-LE Sprites/Spin (Jump)/spin9.png" type="Texture" id=12]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -23,26 +23,26 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 8 ) ],
 "loop": true,
-"name": "jump",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
-"loop": true,
-"name": "walk",
-"speed": 8.0
+"name": "fall",
+"speed": 5.0
 }, {
 "frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
 "loop": true,
 "name": "test",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "walk",
+"speed": 8.0
+}, {
 "frames": [ ExtResource( 12 ) ],
 "loop": true,
-"name": "fall",
-"speed": 5.0
+"name": "jump",
+"speed": 10.0
 } ]
 
-[node name="player" type="KinematicBody2D" index="0"]
+[node name="player" type="KinematicBody2D"]
 
 position = Vector2( 0, 3.76308 )
 input_pickable = false
@@ -66,8 +66,35 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1"]
 
+visible = false
 position = Vector2( 0.662636, 2.32288 )
 build_mode = 0
-polygon = PoolVector2Array( 31.4864, 30.2148, 33.7505, 14.7432, 33.3731, -2.23771, 36.0146, -6.76596, 36.392, -11.2942, 39.7882, -11.6716, 34.5052, -29.0299, 24.3166, -35.8223, 12.6186, -37.3317, 9.38357, -36.9813, 8.46774, -42.992, 12.6186, -43.3693, 7.33567, -48.2749, -5.11703, -48.2749, -7.75851, -44.1241, -4.73968, -42.992, -5.07079, -36.6051, -18.3244, -36.577, -25.4942, -33.5581, -31.9092, -28.2752, -33.4186, -23.7469, -36.02, -15.7037, -37.1137, -4.99681, -35.6827, 5.30938, -34.1733, 24.1771, -28.513, 34.3657, -25.4942, 41.5354, -19.8338, 49.0825, -14.5509, 46.8184, -10.7773, 41.1581, -7.00379, 38.5166, 4.31684, 38.5166, 10.7319, 41.1581, 15.2601, 46.441, 19.411, 47.9504, 23.9393, 43.4222, 27.7128, 35.4977 )
+polygon = PoolVector2Array( 31.4864, 30.2148, 33.7505, 14.7432, 33.3731, -2.23771, 36.0146, -6.76596, 36.392, -11.2942, 38.4391, -14.5509, 34.5052, -29.0299, 24.3166, -35.8223, 12.6186, -37.3317, 9.38357, -36.9813, 8.46774, -42.992, 12.6186, -43.3693, 7.33567, -48.2749, -5.11703, -48.2749, -7.75851, -44.1241, -4.73968, -42.992, -5.07079, -36.6051, -18.3244, -36.577, -25.4942, -33.5581, -31.9092, -28.2752, -33.4186, -23.7469, -36.02, -15.7037, -37.1137, -4.99681, -35.6827, 5.30938, -34.1733, 24.1771, -28.513, 34.3657, -25.4942, 41.5354, -19.8338, 49.0825, -14.5509, 46.8184, -10.7773, 41.1581, -7.00379, 38.5166, 4.31684, 38.5166, 10.7319, 41.1581, 15.2601, 46.441, 19.411, 47.9504, 23.9393, 43.4222, 27.7128, 35.4977 )
+
+[node name="PlayerCamera" type="Camera2D" parent="." index="2"]
+
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 1, 1 )
+limit_left = -10000000
+limit_top = -10000000
+limit_right = 10000000
+limit_bottom = 10000000
+limit_smoothed = false
+drag_margin_h_enabled = false
+drag_margin_v_enabled = false
+smoothing_enabled = true
+smoothing_speed = 5.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.2
+drag_margin_top = 0.2
+drag_margin_right = 0.2
+drag_margin_bottom = 0.2
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = false
+_sections_unfolded = [ "Smoothing" ]
 
 
