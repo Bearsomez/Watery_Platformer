@@ -5,7 +5,7 @@
 [ext_resource path="res://tilesets/JungleDirtTileset.tres" type="TileSet" id=3]
 [ext_resource path="res://projectiles/waterdrop.tscn" type="PackedScene" id=4]
 
-[node name="world" type="Node" index="0"]
+[node name="world" type="Node"]
 
 script = ExtResource( 1 )
 

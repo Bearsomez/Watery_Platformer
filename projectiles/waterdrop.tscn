@@ -8,7 +8,7 @@
 custom_solver_bias = 0.0
 radius = 7.0
 
-[node name="waterdrop" type="RigidBody2D"]
+[node name="waterdrop" type="RigidBody2D" index="0"]
 
 position = Vector2( 198, 96 )
 input_pickable = false

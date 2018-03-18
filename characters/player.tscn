@@ -7,11 +7,11 @@
 [ext_resource path="res://art/Bot-LE Sprites/Idle/Right/Bob4.png" type="Texture" id=5]
 [ext_resource path="res://art/Bot-LE Sprites/Idle/Right/Bob5.png" type="Texture" id=6]
 [ext_resource path="res://art/Bot-LE Sprites/Idle/Right/Bob6.png" type="Texture" id=7]
-[ext_resource path="res://art/Bot-LE Sprites/Spin (Jump)/spin1.png" type="Texture" id=8]
+[ext_resource path="res://art/Bot-LE Sprites/Spin (Jump)/spin9.png" type="Texture" id=8]
 [ext_resource path="res://art/Bot-LE Sprites/Walk/Right/rock1.png" type="Texture" id=9]
 [ext_resource path="res://art/Bot-LE Sprites/Walk/Right/rock2.png" type="Texture" id=10]
 [ext_resource path="res://art/Bot-LE Sprites/Walk/Right/rock3.png" type="Texture" id=11]
-[ext_resource path="res://art/Bot-LE Sprites/Spin (Jump)/spin9.png" type="Texture" id=12]
+[ext_resource path="res://art/Bot-LE Sprites/Spin (Jump)/spin1.png" type="Texture" id=12]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -23,23 +23,23 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 8 ) ],
 "loop": true,
-"name": "fall",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
-"loop": true,
-"name": "test",
-"speed": 5.0
+"name": "jump",
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
 "loop": true,
 "name": "walk",
 "speed": 8.0
 }, {
+"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "test",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 12 ) ],
 "loop": true,
-"name": "jump",
-"speed": 10.0
+"name": "fall",
+"speed": 5.0
 } ]
 
 [node name="player" type="KinematicBody2D"]
