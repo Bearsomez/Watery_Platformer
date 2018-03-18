@@ -34,7 +34,7 @@ _sections_unfolded = [ "Collision" ]
 __meta__ = {
 "_edit_group_": true
 }
-speed = Vector2( 800, -500 )
+speed = Vector2( 800, 500 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
